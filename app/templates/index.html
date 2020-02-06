@@ -1,0 +1,160 @@
+{%  extends 'layout.html' %}
+{% block content %}
+    <div id="theCarousel" class="carousel slide" data-ride="carousel">
+
+      <!-- Define how many slides to put in the carousel -->
+      <ol class="carousel-indicators">
+        <li data-target="#theCarousel" data-slide-to="0" class="active"> </li>
+        <li data-target="#theCarousel" data-slide-to="1"> </li>
+        <li data-target="#theCarousel" data-slide-to="2"> </li>
+      </ol>
+
+      <!-- Define the text to place over the image -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="slide1"></div>
+          <div class="carousel-caption">
+            <h1>Sale Sale!</h1>
+            <p>Sale</p>
+            <p><a href="#" class="btn btn-primary btn-sm">Get them Now</a></p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="slide2"></div>
+          <div class="carousel-caption">
+            <h1>Sale Sale!</h1>
+            <p>Sale</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="slide3"></div>
+          <div class="carousel-caption">
+            <h1>Sale Sale!</h1>
+            <p>Sale</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Set the actions to take when the arrows are clicked -->
+      <a class="left carousel-control" href="#theCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"> </span>
+      </a>
+      <a class="right carousel-control" href="#theCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+    <div class="Best_of_best">
+      <div class="text-center gaping">
+          <div class="h2">Best Of the Best</div>
+      </div>
+      <div class="row">
+          <div class="col-sm-4">
+              <div class="banner-shortcode style-3 wide" style="background-image: url(img/book-table.jpg);">
+                  <div class="overlay">
+                      <div class="valign-middle-cell">
+                          <div class="valign-middle-content">
+                              <a href="#"><h3 class="h3 light">Laptops</h3></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-4">
+              <div class="banner-shortcode style-3 wide" style="background-image: url(img/gift-coupon.jpg);">
+                  <div class="overlay">
+                      <div class="valign-middle-cell">
+                          <div class="valign-middle-content">
+                              <a href=""><h3 class="h3 light">Gaming Laptos</h3></a>
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-4">
+              <div class="banner-shortcode style-3 wide" style="background-image: url(img/banner.jpg);">
+                  <div class="overlay">
+                      <div class="valign-middle-cell">
+                          <div class="valign-middle-content">
+                              <a href=""><h3 class="h3 light">Accessories</h3></a>
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- subscribers -->
+  <div id="subscribe" class="section">
+    <!-- container -->
+    <div class="container">
+      <!-- row -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="subscribe">
+            <p> <strong>SUBSCRIBE</strong></p>
+            <form>
+              <input class="input" type="email" placeholder="Enter Your Email">
+              <button class="subscribe-btn"><i class="fa fa-envelope"></i> Subscribe</button>
+            </form>
+            <ul class="subscribe-follow">
+              <li>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- /row -->
+    </div>
+    <!-- /container -->
+  </div>
+
+  <!-- Footer -->
+
+  </div>
+      <div class="login">
+  <div id="id02" class="modal">
+
+    <form class="modal-content animate" action="user" method="post">
+{#        {% csrf_token %}#}
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <!-- <img src="img/logo - Shortcut.lnk" alt="logo" class="avatar">
+      </div> -->
+      <h1>LogIn</h1>
+
+      <div class="container">
+        <label for="name"><b>Username</b></label>
+        {{ form.name }}
+
+          <label for="email"><b>Email</b></label>
+          {{ form.email }}
+
+        <label for="psw"><b>Password</b></label>
+        {{ form.password }}
+
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+      </div>
+    </form>
+  </div>
+  </div>
+  </div>
+{% endblock %}
