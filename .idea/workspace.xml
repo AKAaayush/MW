@@ -2,19 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfab8ed2-2fed-47c5-9930-02587cc4328d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/singup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/authenticate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/css/animation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/entry.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BetterBuy/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/BetterBuy/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/dashbord.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/dashbord.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/laptos.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/laptos.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/singup.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/singup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -123,7 +118,7 @@
       <workItem from="1581074639120" duration="13803000" />
       <workItem from="1581153991489" duration="294000" />
       <workItem from="1581168260667" duration="6259000" />
-      <workItem from="1581214274662" duration="12572000" />
+      <workItem from="1581214274662" duration="27165000" />
     </task>
     <servers />
   </component>

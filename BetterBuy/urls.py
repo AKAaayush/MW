@@ -27,6 +27,8 @@ urlpatterns = [
 
     # CRUD
     path('create',views.create),
+    path('login',views.login),
+    path('entry',views.entry),
 
     path('edit/<int:id>',views.edit),
     path('update/<int:id>',views.update),

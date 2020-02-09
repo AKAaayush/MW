@@ -31,7 +31,9 @@
   <!-- Custom stlylesheet -->
   <link type="text/css" rel="stylesheet" href='{% static "css/style.css" %}' />
   <link rel="stylesheet" href={% static "css/style.css" %}>
+    <link rel="stylesheet" href={% static "css/animation.css" %}>
   <link typ="text/css"rel="stylesheet" href='{% static "css/login.css" %}'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 <!-- javascripts -->
 <script src='{% static "js/login.js" %}'></script>
 <!-- taplogo -->
@@ -62,10 +64,11 @@
           </div>
 
           <div class="head-content3">
+
             <i class="fa fa-sign-in" aria-hidden="true"></i>
-            <a href="#"onclick="document.getElementById('id01').style.display='block'"><b>login</b></a>
+            <a href="/login"><b>login</b></a>
             &nbsp; or &nbsp;
-            <a href="/create"onclick="document.getElementById('id02').style.display='block'"><b>register</b></a>
+            <a href="/create"><b>register</b></a>
           </div>
           <div class="head-content4">
             <i class="fa fa-heart-o"></i>
@@ -231,7 +234,8 @@
 <div class="login">
   <div id="id01" class="modal">
 
-    <form class="modal-content animate" action="/" method="post">
+    <form class="modal-content animate" action="" method="post">
+        {% csrf_token %}
       <div class="imgcontainer">
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
         <!-- <img src="img/logo - Shortcut.lnk" alt="logo" class="avatar">
@@ -240,10 +244,12 @@
 
       <div class="container">
         <label for="uname"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
+{#        <input type="text" placeholder="username" name="username" required>#}
+           <input type="text" placeholder="Your Name" "{{ form.name }}">
 
         <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
+{#        <input type="password" placeholder="password" name="password" required>#}
+           <input type="text" placeholder="Your Name" "{{ form.password }}">
 
         <button type="submit">Login</button>
         <label>
