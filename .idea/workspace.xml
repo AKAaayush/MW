@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfab8ed2-2fed-47c5-9930-02587cc4328d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/authenticate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/css/animation.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/entry.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/about.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/signin-image.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BetterBuy/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/BetterBuy/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/entry.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/entry.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/singup.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/singup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,8 +44,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1WpZHXc43S1tubE9XrsiUDOoYhK" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -118,7 +119,7 @@
       <workItem from="1581074639120" duration="13803000" />
       <workItem from="1581153991489" duration="294000" />
       <workItem from="1581168260667" duration="6259000" />
-      <workItem from="1581214274662" duration="27165000" />
+      <workItem from="1581214274662" duration="36006000" />
     </task>
     <servers />
   </component>
@@ -137,5 +138,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
