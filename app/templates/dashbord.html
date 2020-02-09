@@ -44,6 +44,8 @@
 <a href="#" class="nav-trigger"><span></span>
 </a>
 
+    {%  csrf_token %}
+
 </div>
 <div class="side-nav">
     <nav>
@@ -77,26 +79,29 @@
 </div>
 
 <div class="main-content">
-<table>
+<div class="table">
+    <table>
     <tr>
-        <thead>
         <th>ID</th>
         <th>Name</th>
         <th>Email</th>
         <th>Password</th>
-        </thead>
+        <th>Action</th>
     </tr>
     {% for user in users %}
     <tr>
-    <tbody>
+
     <td>{{ user.user_id }}</td>
     <td>{{ user.name }}</td>
     <td>{{ user.email }}</td>
     <td>{{ user.password }}</td>
-    </tbody>
+      <td><a href="/edit/{{ user.user_id }}">edit</a>/<a href="/delete/{{ user.user_id }}">delete</a></td>
+
     </tr>
     {% endfor %}
 </table>
+</div>
+
 
 </div>
 

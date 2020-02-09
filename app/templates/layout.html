@@ -65,7 +65,7 @@
             <i class="fa fa-sign-in" aria-hidden="true"></i>
             <a href="#"onclick="document.getElementById('id01').style.display='block'"><b>login</b></a>
             &nbsp; or &nbsp;
-            <a href="#"onclick="document.getElementById('id02').style.display='block'"><b>register</b></a>
+            <a href="/create"onclick="document.getElementById('id02').style.display='block'"><b>register</b></a>
           </div>
           <div class="head-content4">
             <i class="fa fa-heart-o"></i>
@@ -79,7 +79,7 @@
     <nav class="navbar navbar-default ">
       <div class="container-fluid">
 
-        <!-- Brand and toggle get grouped for better mobile display -->
+        <!-- Brand and toggle get grouped for better laptop display -->
         <div class="navbar-header">
 
           <!-- Button that toggles the navbar on and off on small screens -->
@@ -103,7 +103,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
          <div class="mainnav">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index">Home <span class="sr-only">(current)</span></a></li>
+            <li class="active"><a href="/">Home <span class="sr-only">(current)</span></a></li>
             <li><a href='/laptos'>Laptos</a></li>
             <li><a href='/about'>About US</a></li>
 
@@ -231,7 +231,7 @@
 <div class="login">
   <div id="id01" class="modal">
 
-    <form class="modal-content animate" action="/action_page.php" method="post">
+    <form class="modal-content animate" action="/" method="post">
       <div class="imgcontainer">
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
         <!-- <img src="img/logo - Shortcut.lnk" alt="logo" class="avatar">
@@ -258,48 +258,50 @@
       </div>
     </form>
   </div>
-  </div>
-  </div>
+
 
 {#signup#}
-  <div class="login">
-  <div id="id02" class="modal">
+{#  <div class="login">#}
+{#  <div id="id02" class="modal">#}
+{##}
+{##}
+{#      <div class="imgcontainer">#}
+{#        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>#}
+{#        <!-- <img src="img/logo - Shortcut.lnk" alt="logo" class="avatar">#}
+{#      </div> -->#}
+{#      <h1>LogIn</h1>#}
+{##}
+{#      <div class="container">#}
+{#          <form class="modal-content animate" action="/" method="POST">#}
+{#        {% csrf_token %}#}
+{#        <label for="name"><b>Username</b></label>#}
+{#        {{ form.name }}#}
+{##}
+{#          <label for="email"><b>Email</b></label>#}
+{#          {{ form.email }}#}
+{##}
+{#        <label for="psw"><b>Password</b></label>#}
+{#        {{ form.password }}#}
+{##}
+{#        <button type="submit">Login</button>#}
+{#        <label>#}
+{#          <input type="checkbox" checked="checked" name="remember"> Remember me#}
+{#        </label>#}
+{#                </form>#}
+{#      </div>#}
+{##}
+{#      <div class="container" style="background-color:#f1f1f1">#}
+{#        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>#}
+{#        <span class="psw">Forgot <a href="#">password?</a></span>#}
+{#      </div>#}
+{#      </div>#}
+{##}
+{#  </div>#}
+{#  </div>#}
+{#  </div>#}
 
-    <form class="modal-content animate" action="user" method="post">
-        {% csrf_token %}
-      <div class="imgcontainer">
-        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <!-- <img src="img/logo - Shortcut.lnk" alt="logo" class="avatar">
-      </div> -->
-      <h1>LogIn</h1>
-
-      <div class="container">
-        <label for="name"><b>Username</b></label>
-        {{ form.name }}
-
-          <label for="email"><b>Email</b></label>
-          {{ form.email }}
-
-        <label for="psw"><b>Password</b></label>
-        {{ form.password }}
-
-        <button type="submit">Login</button>
-        <label>
-          <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
-      </div>
-
-      <div class="container" style="background-color:#f1f1f1">
-        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
-        <span class="psw">Forgot <a href="#">password?</a></span>
-      </div>
-      </div>
-    </form>
+</div>
   </div>
-  </div>
-  </div>
-
-
 
 
 
