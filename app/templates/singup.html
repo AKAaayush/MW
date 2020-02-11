@@ -1,262 +1,285 @@
-{%  extends 'layout.html' %}
+{% extends 'layout.html' %}
 {% load static %}
 {% block content %}
 
 
-<div class="container-fluid">
- <div class="signup">
+    <div class="container-fluid">
+        <div class="signup">
 
-{#    <form method="post" action="">#}
-{#     {% csrf_token %}#}
-{#    username:{{ form.name }}#}
-{#    email:{{ form.email }}#}
-{#    password:input{{ form.password }}#}
-{#    <button type="Submit" >submit</button>#}
-{##}
-{#</form>#}
-     <div class="animated"><div class="signup-content " >
+            {#    <form method="post" action="">#}
+            {#     {% csrf_token %}#}
+            {#    username:{{ form.name }}#}
+            {#    email:{{ form.email }}#}
+            {#    password:input{{ form.password }}#}
+            {#    <button type="Submit" >submit</button>#}
+            {##}
+            {#</form>#}
+            <div class="animated">
+                <div class="signup-content ">
                     <div class="signup-form animated slideInLeft  ">
                         <h2 class="form-title">Sign up</h2>
                         <form method="Post" class="register-form" id="register-form" action="">
                             {% csrf_token %}
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-{#                                <input type="text" name="name" id="name" placeholder="Your Name" {{ form.name }}>#}
+                                {#                                <input type="text" name="name" id="name" placeholder="Your Name" {{ form.name }}>#}
                                 <input type="text" placeholder="Your Name" "{{ form.name }}">
                             </div>
                             <div class="form-group">
                                 <label for="email"><i class="zmdi zmdi-email"></i></label>
-{#                                <input type="email" name="email" id="email" placeholder="Your Email" {{ form.email }}>#}
+                                {#                                <input type="email" name="email" id="email" placeholder="Your Email" {{ form.email }}>#}
                                 <input type="email" placeholder="Your Email" "{{ form.email }}">
                             </div>
                             <div class="form-group">
                                 <label for="pass"><i class="zmdi zmdi-lock"></i></label>
-{#                                input type="password" name="pass" id="pass" placeholder="Password" {{ form.password }} #}
-                                <div class="password"><input type="password" placeholder="Password" "{{ form.password }}"></div>
+                                {#                                input type="password" name="pass" id="pass" placeholder="Password" {{ form.password }} #}
+                                <div class="password"><input type="password" placeholder="Password" "{{ form.password }}">
+                                </div>
 
                             </div>
-{#                            <div class="form-group">#}
-{#                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>#}
-{#                                <input type="password1" name="re_pass" id="re_pass" placeholder="Repeat your password">#}
-{#                            </div>#}
+                            {#                            <div class="form-group">#}
+                            {#                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>#}
+                            {#                                <input type="password1" name="re_pass" id="re_pass" placeholder="Repeat your password">#}
+                            {#                            </div>#}
                             <div class="form-group">
                                 <input type="checkbox" name="agree-term" id="agree-term" class="agree-term">
-                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all
+                                    statements in <a href="#" class="term-service">Terms of service</a></label>
                             </div>
                             <div class="form-group form-button">
-                                <input type="submit" name="signup" id="signup" class="form-submit" >
-{#                                <button type="Submit" >submit</button>#}
+                                <input type="submit" name="signup" id="signup" class="form-submit">
+                                {#                                <button type="Submit" >submit</button>#}
                             </div>
                         </form>
                     </div>
                     <div class="signup-image animated slideInRight ">
-                        <figure><div class="image"><img src={% static "img/signup-image.jpg" %} alt="sing up image"></div></figure>
+                        <figure>
+                            <div class="image"><img src={% static "img/signup-image.jpg" %} alt="sing up image"></div>
+                        </figure>
                         <a href="#" class="signup-image-link">I am already member</a>
                     </div>
                 </div>
-    </div></div>
-
-</div>
-
-  <!-- subscribers -->
-  <div id="subscribe bounce" class="section">
-    <!-- container -->
-    <div class="container">
-      <!-- row -->
-      <div class="row">
-        <div class="col-md-12">
-          <div class="subscribe ">
-            <p> <strong>SUBSCRIBE</strong></p>
-            <form>
-              <input class="input" type="email" placeholder="Enter Your Email">
-              <button class="subscribe-btn"><i class="fa fa-envelope"></i> Subscribe</button>
-            </form>
-            <ul class="subscribe-follow">
-              <li>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-              </li>
-            </ul>
-          </div>
+            </div>
         </div>
-      </div>
-    </div>
-      <!-- /row -->
+
     </div>
 
-{#    signup style#}
+    <!-- subscribers -->
+    <div id="subscribe bounce" class="section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="subscribe ">
+                        <p><strong>SUBSCRIBE</strong></p>
+                        <form>
+                            <input class="input" type="email" placeholder="Enter Your Email">
+                            <button class="subscribe-btn"><i class="fa fa-envelope"></i> Subscribe</button>
+                        </form>
+                        <ul class="subscribe-follow">
+                            <li>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /row -->
+    </div>
+
+    {#    signup style#}
     <style>
-    .signup-content {
-    padding: 75px 0;
-}
-   .signup-form {
-    margin-left: 0px;
-    /* margin-right: -31px; */
-    padding-left: 34px;
-    float: left;
-}
-    .signup-form, .signup-image, .signin-form, .signin-image {
-    width: 50%;
-    overflow: hidden;
-}
-    .form-title {
-    margin-bottom: 33px;
-        text-align: center;
-}
-    .register-form {
-    width: 100%;
-}
-    .form-group {
-    position: relative;
-    margin-bottom: 25px;
-    overflow: hidden;
-}
-    .form-group:last-child {
-    margin-bottom: 0px;
+        .signup-content {
+            padding: 75px 0;
+        }
+
+        .signup-form {
+            margin-left: 0px;
+            /* margin-right: -31px; */
+            padding-left: 34px;
+            float: left;
+        }
+
+        .signup-form, .signup-image, .signin-form, .signin-image {
+            width: 50%;
+            overflow: hidden;
+        }
+
+        .form-title {
+            margin-bottom: 33px;
             text-align: center;
-}
-    .form-group {
-    position: relative;
-    margin-bottom: 25px;
-    overflow: hidden;
-}
-    label {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    color: #222;
-}
-   input{
-    width: 100%;
-    {#display: block;#}
-    border: none;
-    border-bottom: 1px solid #999;
-    padding: 6px 30px;
-    font-family: Poppins;
-    box-sizing: border-box;
-}
-      .password input{
-    width: 100%;
-    {#display: block;#}
-    border: none;
-    border-bottom: 1px solid #999;
-    padding: 6px 30px;
-    font-family: Poppins;
-    box-sizing: border-box;
-}
-  input[type=checkbox]:not(old) {
-    float: left;
-    width: 2em;
-    margin: 10px;
-    padding: 0;
-    font-size: 1em;
-    /* display: none; */
-}
-input[type=checkbox]:not(old) + label {
-    display: inline-block;
-    line-height: 1.5em;
-    margin-top: 6px;
-}
-    .label-agree-term {
-    position: relative;
-    top: 0%;
-    transform: translateY(0);
-    -moz-transform: translateY(0);
-    -webkit-transform: translateY(0);
-    -o-transform: translateY(0);
-    -ms-transform: translateY(0);
-}
-    .form-group:last-child {
-    margin-bottom: 0px;
-        margin-top: 55px;
-}
-    .form-submit {
-    display: inline-block;
-    background: #D10024;
-    color: #fff;
-    border-bottom: none;
-    width: auto;
-    padding: 15px 39px;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -o-border-radius: 5px;
-    -ms-border-radius: 5px;
-    margin-top: 25px;
-    cursor: pointer;
-}
-    .signup-image {
-    margin-top: 15px;
-}
-    figure {
-    margin-bottom: 50px;
-    text-align: center;
-}
-    .signup-image .image  img {
- height: 100%;
-    width: 45%;
-}
-    .signup-image-link {
-    font-size: 14px;
-    color: #222;
-    display: block;
-    text-align: center;
-}
+        }
 
-    {#animatio#}
-    @-webkit-keyframes rubberBand {
-  from {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
+        .register-form {
+            width: 100%;
+        }
 
-  30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-    transform: scale3d(1.25, 0.75, 1);
-  }
+        .form-group {
+            position: relative;
+            margin-bottom: 25px;
+            overflow: hidden;
+        }
 
-  40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-    transform: scale3d(0.75, 1.25, 1);
-  }
+        .form-group:last-child {
+            margin-bottom: 0px;
+            text-align: center;
+        }
 
-  50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1);
-    transform: scale3d(1.15, 0.85, 1);
-  }
+        .form-group {
+            position: relative;
+            margin-bottom: 25px;
+            overflow: hidden;
+        }
 
-  65% {
-    -webkit-transform: scale3d(0.95, 1.05, 1);
-    transform: scale3d(0.95, 1.05, 1);
-  }
+        label {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            color: #222;
+        }
 
-  75% {
-    -webkit-transform: scale3d(1.05, 0.95, 1);
-    transform: scale3d(1.05, 0.95, 1);
-  }
+        input {
+            width: 100%;
+        {#display: block;#} border: none;
+            border-bottom: 1px solid #999;
+            padding: 6px 30px;
+            font-family: Poppins;
+            box-sizing: border-box;
+        }
 
-  to {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
+        .password input {
+            width: 100%;
+        {#display: block;#} border: none;
+            border-bottom: 1px solid #999;
+            padding: 6px 30px;
+            font-family: Poppins;
+            box-sizing: border-box;
+        }
+
+        input[type=checkbox]:not(old) {
+            float: left;
+            width: 2em;
+            margin: 10px;
+            padding: 0;
+            font-size: 1em;
+            /* display: none; */
+        }
+
+        input[type=checkbox]:not(old) + label {
+            display: inline-block;
+            line-height: 1.5em;
+            margin-top: 6px;
+        }
+
+        .label-agree-term {
+            position: relative;
+            top: 0%;
+            transform: translateY(0);
+            -moz-transform: translateY(0);
+            -webkit-transform: translateY(0);
+            -o-transform: translateY(0);
+            -ms-transform: translateY(0);
+        }
+
+        .form-group:last-child {
+            margin-bottom: 0px;
+            margin-top: 55px;
+        }
+
+        .form-submit {
+            display: inline-block;
+            background: #D10024;
+            color: #fff;
+            border-bottom: none;
+            width: auto;
+            padding: 15px 39px;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -o-border-radius: 5px;
+            -ms-border-radius: 5px;
+            margin-top: 25px;
+            cursor: pointer;
+        }
+
+        .signup-image {
+            margin-top: 15px;
+        }
+
+        figure {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .signup-image .image img {
+            height: 100%;
+            width: 45%;
+        }
+
+        .signup-image-link {
+            font-size: 14px;
+            color: #222;
+            display: block;
+            text-align: center;
+        }
+
+        {#animatio#}
+        @-webkit-keyframes rubberBand {
+            from {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+
+            30% {
+                -webkit-transform: scale3d(1.25, 0.75, 1);
+                transform: scale3d(1.25, 0.75, 1);
+            }
+
+            40% {
+                -webkit-transform: scale3d(0.75, 1.25, 1);
+                transform: scale3d(0.75, 1.25, 1);
+            }
+
+            50% {
+                -webkit-transform: scale3d(1.15, 0.85, 1);
+                transform: scale3d(1.15, 0.85, 1);
+            }
+
+            65% {
+                -webkit-transform: scale3d(0.95, 1.05, 1);
+                transform: scale3d(0.95, 1.05, 1);
+            }
+
+            75% {
+                -webkit-transform: scale3d(1.05, 0.95, 1);
+                transform: scale3d(1.05, 0.95, 1);
+            }
+
+            to {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+        }
 
     </style>
     <!-- /container -->
-  </div>
+    </div>
 
-  <!-- Footer -->
-  {% endblock %}
+    <!-- Footer -->
+{% endblock %}
 
 
 

@@ -1,15 +1,14 @@
-
-{%  extends 'dashbord.html' %}
+{% extends 'dashbord.html' %}
 {% block content %}
     {% load static %}
 
-<div class="main-content">
-<form method="post" action="/create1">
-    {% csrf_token %}
-Username:{{ form.adminname }}
-EMail:{{ form.adminemail }}
-Password:{{ form.adminpassword }}
-    <button type="submit">submite</button>
-</form>
-</div>
+    <div class="main-content">
+        <form method="post" action="/create1">
+            {% csrf_token %}
+            Username:{{ form.adminname }}
+            EMail:{{ form.adminemail }}
+            Password:{{ form.adminpassword }}
+            <button type="submit">submite</button>
+        </form>
+    </div>
 {% endblock %}

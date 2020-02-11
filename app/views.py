@@ -24,14 +24,21 @@ def about(request):
 def apple(request):
     return render(request, 'apple.html')
 
+
 def adminlogin(request):
     return render(request, 'adminlogin.html')
 
 
-@Authenticate.valid_adminlogin
+@Authenticate.valid_login
+def userentry(request):
+    users = User.objects.all()
+    return render(request, "entry.html", {'users': users})
+
+
 def userdetail(request):
     users = User.objects.all()
     return render(request, "userdetail.html", {'users': users})
+
 
 @Authenticate.valid_adminlogin
 def admintable(request):
@@ -43,7 +50,7 @@ def create(request):
     if request.method == "POST":
         form = UserForm(request.POST)
         form.save()
-        redirect('/')
+        redirect('/entry')
     form = UserForm()
     return render(request, 'singup.html', {'form': form})
 
@@ -55,13 +62,13 @@ def login(request):
 def adminentry(request):
     request.session['email'] = request.POST['email']
     request.session['password'] = request.POST['password']
-    return redirect('/userdetail')
+    return redirect('/admintable')
 
 
 def loginvalid(request):
     request.session['email'] = request.POST['email']
     request.session['password'] = request.POST['password']
-    return redirect('/userdetail')
+    return redirect('/userentry')
 
 
 # def subscriber(request):
@@ -81,7 +88,7 @@ def update(request, id):
     user = User.objects.get(user_id=id)
     form = UserForm(request.POST, instance=user)
     form.save()
-    return redirect('/')
+    return redirect('/userdetail')
 
 
 def delete(request, id):
@@ -100,7 +107,7 @@ def create1(request):
     if request.method == "POST":
         form = AdminForm(request.POST)
         form.save()
-        redirect('/')
+        redirect('/admintabel')
     form = AdminForm()
     return render(request, 'create1.html', {'form': form})
 

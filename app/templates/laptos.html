@@ -1,150 +1,203 @@
-{%  extends 'layout.html' %}
-
+{% extends 'layout.html' %}
+{% load static %}
 {% block content %}
     <div class="container">
-        <div class="col-sm-6 col-md-4" style="width: 20.333333%;">
- <div class="thumbnail">
- <img src="http://placehold.it/750x600" alt="">
- <div class="add-to-cart">
- <a href="#" class="glyphicon glyphicon-plus-sign"
-data-toggle="tooltip" data-placement="top" title="Add to cart"></a>
- </div>
- <div class="caption">
- <h4 class="pull-right">$24.99</h4>
- <h4><a href="#">1<sup>st</sup> Product</a>
- </h4>
- <p>This is a short description. Lorem ipsum dolor sit
-amet, consectetur adipiscing elit.</p>
- <div class="ratings">
- <p class="pull-right"><a href="product.
-html#comments">15 reviews</a></p>
- <p>
- <i class="fa fa-sign-in" aria-hidden="true"></i>
-<i class="fa fa-sign-in" aria-hidden="true"></i>
- <i class="fa fa-sign-in" aria-hidden="true"></i>
- <i class="fa fa-sign-in" aria-hidden="true"></i>
- <i class="fa fa-sign-in" aria-hidden="true"></i>
- </p>
- </div>
- </div>
- </div>
-            <div class="col-sm-6 col-md-4" style="width: 20.333333%;">
- <div class="thumbnail">
- <img src="http://placehold.it/750x600" alt="">
- <div class="add-to-cart">
- <a href="#" class="glyphicon glyphicon-plus-sign" data-toggle="tooltip" data-placement="top" title="Add to cart"></a>
- </div>
- <div class="caption">
- <h4 class="pull-right">$24.99</h4>
- <h4><a href="#">1<sup>st</sup> Product</a>
- </h4>
- <p>This is a short description. Lorem ipsum dolor sit
-amet, consectetur adipiscing elit.</p>
- <div class="ratings">
- <p class="pull-right"><a href="product.
-html#comments">15 reviews</a></p>
- <p>
- <i class="fa fa-sign-in" aria-hidden="true"></i>
-<i class="fa fa-sign-in" aria-hidden="true"></i>
- <i class="fa fa-sign-in" aria-hidden="true"></i>
- <i class="fa fa-sign-in" aria-hidden="true"></i>
- <i class="fa fa-sign-in" aria-hidden="true"></i>
- </p>
- </div>
- </div>
- </div>
+        <div class="col-sm-6 col-md-4" style="">
+            <div class="thumbnail">
+                <img src={% static "img/laptop1.png" %} alt="laptop">
+                <div class="caption">
+                    <h4 class="pull-right">$24.99</h4>
+                    <h4><a href="#">1<sup>st</sup> Product</a>
+                    </h4>
+                    <p>This is a short description. Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit.</p>
+                    <div class="ratings">
+                        <p class="pull-right"><a href="#">15 reviews</a></p>
+                        <p>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
 
- </div>
-            <div class="col-sm-6 col-md-4" style="width: 20.333333%;">
- <div class="thumbnail">
- <img src="http://placehold.it/750x600" alt="">
- <div class="add-to-cart">
- <a href="#" class="glyphicon glyphicon-plus-sign" data-toggle="tooltip" data-placement="top" title="Add to cart"></a>
- </div>
- <div class="caption">
- <h4 class="pull-right">$24.99</h4>
- <h4><a href="#">1<sup>st</sup> Product</a>
- </h4>
- <p>This is a short description. Lorem ipsum dolor sit
-amet, consectetur adipiscing elit.</p>
- <div class="ratings">
- <p class="pull-right"><a href="product.
-html#comments">15 reviews</a></p>
- <p>
- <i class="fa fa-sign-in" aria-hidden="true"></i>
-<i class="fa fa-sign-in" aria-hidden="true"></i>
- <i class="fa fa-sign-in" aria-hidden="true"></i>
- <i class="fa fa-sign-in" aria-hidden="true"></i>
- <i class="fa fa-sign-in" aria-hidden="true"></i>
- </p>
- </div>
- </div>
- </div>
 
- </div>
-            <div class="col-sm-6 col-md-4" style="width: 20.333333%;">
- <div class="thumbnail">
- <img src="http://placehold.it/750x600" alt="">
- <div class="add-to-cart">
- <a href="#" class="glyphicon glyphicon-plus-sign" data-toggle="tooltip" data-placement="top" title="Add to cart"></a>
- </div>
- <div class="caption">
- <h4 class="pull-right">$24.99</h4>
- <h4><a href="#">1<sup>st</sup> Product</a>
- </h4>
- <p>This is a short description. Lorem ipsum dolor sit
-amet, consectetur adipiscing elit.</p>
- <div class="ratings">
- <p class="pull-right"><a href="product.
-html#comments">15 reviews</a></p>
- <p>
- <i class="fa fa-sign-in" aria-hidden="true"></i>
-<i class="fa fa-sign-in" aria-hidden="true"></i>
- <i class="fa fa-sign-in" aria-hidden="true"></i>
- <i class="fa fa-sign-in" aria-hidden="true"></i>
- <i class="fa fa-sign-in" aria-hidden="true"></i>
- </p>
- </div>
- </div>
- </div>
-
- </div>
-
- </div>
-
-    </div>
-  <!-- subscribers -->
-  <div id="subscribe" class="section">
-    <!-- container -->
-    <div class="container">
-      <!-- row -->
-      <div class="row">
-        <div class="col-md-12">
-          <div class="subscribe">
-            <p> <strong>SUBSCRIBE</strong></p>
-            <form>
-              <input class="input" type="email" placeholder="Enter Your Email">
-              <button class="subscribe-btn"><i class="fa fa-envelope"></i> Subscribe</button>
-            </form>
-            <ul class="subscribe-follow">
-              <li>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-              </li>
-            </ul>
-          </div>
         </div>
-      </div>
+        <div class="col-sm-6 col-md-4" style="">
+            <div class="thumbnail">
+                <img src={% static "img/laptop2.png" %} alt="laptop">
+                <div class="caption">
+                    <h4 class="pull-right">$24.99</h4>
+                    <h4><a href="#">1<sup>st</sup> Product</a>
+                    </h4>
+                    <p>This is a short description. Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit.</p>
+                    <div class="ratings">
+                        <p class="pull-right"><a href="#">15 reviews</a></p>
+                        <p>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-sm-6 col-md-4" style="">
+            <div class="thumbnail">
+                <img src={% static "img/laptop3.png" %} alt="laptop">
+                <div class="caption">
+                    <h4 class="pull-right">$24.99</h4>
+                    <h4><a href="#">1<sup>st</sup> Product</a>
+                    </h4>
+                    <p>This is a short description. Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit.</p>
+                    <div class="ratings">
+                        <p class="pull-right"><a href="#">15 reviews</a></p>
+                        <p>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-sm-6 col-md-4" style="">
+            <div class="thumbnail">
+                <img src={% static "img/laptop1.png" %} alt="laptop">
+                <div class="caption">
+                    <h4 class="pull-right">$24.99</h4>
+                    <h4><a href="#">1<sup>st</sup> Product</a>
+                    </h4>
+                    <p>This is a short description. Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit.</p>
+                    <div class="ratings">
+                        <p class="pull-right"><a href="#">15 reviews</a></p>
+                        <p>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-sm-6 col-md-4" style="">
+            <div class="thumbnail">
+                <img src={% static "img/laptop2.png" %} alt="laptop">
+                <div class="caption">
+                    <h4 class="pull-right">$24.99</h4>
+                    <h4><a href="#">1<sup>st</sup> Product</a>
+                    </h4>
+                    <p>This is a short description. Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit.</p>
+                    <div class="ratings">
+                        <p class="pull-right"><a href="#">15 reviews</a></p>
+                        <p>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-sm-6 col-md-4" style="">
+            <div class="thumbnail">
+                <img src={% static "img/laptop3.png" %} alt="laptop">
+                <div class="caption">
+                    <h4 class="pull-right">$24.99</h4>
+                    <h4><a href="#">1<sup>st</sup> Product</a>
+                    </h4>
+                    <p>This is a short description. Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit.</p>
+                    <div class="ratings">
+                        <p class="pull-right"><a href="#">15 reviews</a></p>
+                        <p>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
     </div>
-      <!-- /row -->
+
+
+
+
+
+
+    <!-- subscribers -->
+    <div id="subscribe" class="section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="subscribe">
+                        <p><strong>SUBSCRIBE</strong></p>
+                        <form>
+                            <input class="input" type="email" placeholder="Enter Your Email">
+                            <button class="subscribe-btn"><i class="fa fa-envelope"></i> Subscribe</button>
+                        </form>
+                        <ul class="subscribe-follow">
+                            <li>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /row -->
     </div>
     <!-- /container -->
-  </div>
+    </div>
 
-  <!-- Footer -->
-  {% endblock %}
+    <style>
+        .thumbnail {
+            width: 100%;
+        }
+
+        .thumbnail img {
+            height: 200px;
+        }
+
+    </style>
+
+
+    <!-- Footer -->
+{% endblock %}

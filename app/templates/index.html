@@ -1,260 +1,309 @@
-{%  extends 'layout.html' %}
+{% extends 'layout.html' %}
 {% block content %}
     {% load static %}
     <div id="theCarousel" class="carousel slide" data-ride="carousel">
 
-      <!-- Define how many slides to put in the carousel -->
-      <ol class="carousel-indicators">
-        <li data-target="#theCarousel" data-slide-to="0" class="active"> </li>
-        <li data-target="#theCarousel" data-slide-to="1"> </li>
-        <li data-target="#theCarousel" data-slide-to="2"> </li>
-      </ol>
+        <!-- Define how many slides to put in the carousel -->
+        <ol class="carousel-indicators">
+            <li data-target="#theCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#theCarousel" data-slide-to="1"></li>
+            <li data-target="#theCarousel" data-slide-to="2"></li>
+        </ol>
 
-      <!-- Define the text to place over the image -->
-      <div class="carousel-inner">
-        <div class="item active">
-          <div class="slide1"></div>
-          <div class="carousel-caption">
-            <h1>Sale Sale!</h1>
-            <p>Sale</p>
-            <p><a href="#" class="btn btn-primary btn-sm">Get them Now</a></p>
-          </div>
+        <!-- Define the text to place over the image -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="slide1"></div>
+                <div class="carousel-caption">
+                    <h1>Sale Sale!</h1>
+                    <p>Sale</p>
+                    <p><a href="#" class="btn btn-primary btn-sm">Get them Now</a></p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="slide2"></div>
+                <div class="carousel-caption">
+                    <h1>Sale Sale!</h1>
+                    <p>Sale</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="slide3"></div>
+                <div class="carousel-caption">
+                    <h1>Sale Sale!</h1>
+                    <p>Sale</p>
+                </div>
+            </div>
         </div>
-        <div class="item">
-          <div class="slide2"></div>
-          <div class="carousel-caption">
-            <h1>Sale Sale!</h1>
-            <p>Sale</p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="slide3"></div>
-          <div class="carousel-caption">
-            <h1>Sale Sale!</h1>
-            <p>Sale</p>
-          </div>
-        </div>
-      </div>
 
-      <!-- Set the actions to take when the arrows are clicked -->
-      <a class="left carousel-control" href="#theCarousel" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"> </span>
-      </a>
-      <a class="right carousel-control" href="#theCarousel" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-      </a>
+        <!-- Set the actions to take when the arrows are clicked -->
+        <a class="left carousel-control" href="#theCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"> </span>
+        </a>
+        <a class="right carousel-control" href="#theCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
     </div>
     <div class="Best_of_best">
-      <div class="text-center gaping">
-          <div class="h2">Best Of the Best</div>
-      </div>
-      <div class="row">
-          <div class="col-sm-4">
-              <div class="banner-shortcode style-3 wide" style="background-image: url(img/book-table.jpg);">
-                  <div class="overlay">
-                      <div class="valign-middle-cell">
-                          <div class="valign-middle-content">
-                              <a href="#"><h3 class="h3 light">Laptops</h3></a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-sm-4">
-              <div class="banner-shortcode style-3 wide" style="background-image: url(img/gift-coupon.jpg);">
-                  <div class="overlay">
-                      <div class="valign-middle-cell">
-                          <div class="valign-middle-content">
-                              <a href=""><h3 class="h3 light">Gaming Laptos</h3></a>
+        <div class="text-center gaping">
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="banner-shortcode style-3 wide">
 
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-sm-4">
-              <div class="banner-shortcode style-3 wide" style="background-image: url(img/banner.jpg);">
-                  <div class="overlay">
-                      <div class="valign-middle-cell">
-                          <div class="valign-middle-content">
-                              <a href=""><h3 class="h3 light">Accessories</h3></a>
-
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-    <div class="laptop" id="laptop">
-		<div class="container">
-			<div class="row">
-				<div class="col text-center">
-
-					<div class="section_title"><h2>Laptops</h2></div>
-				</div>
-			</div>
-			<div class="row laptops_row">
-				<div class="col">
-					<div class="laptops_container item_grid">
-
-						<!-- laptops -->
-						<div class="laptops_item" style="width: 350px; float: left; margin-left: 20px;">
-							<div class="laptops_image">
-								<img src="{% static 'img/laptop1.png' %}" alt="" style="height: 200px; width: 250px;">
-
-							</div>
-							<div class="Laptops_content" style="text-align: center; width: 260px;">
-								<div class="laptop_title"><a href="#"><h2>Acer Nitro</h2></a></div>
-								<div class="laptop_subtitle"><p>Cool cool cool cool.</p></div>
-								<div class="laptop_price">From $679</div>
-							</div>
-						</div>
-
-                        <!-- laptops -->
-						<div class="laptops_item" style="width: 350px; float: left; margin-left: 20px;">
-							<div class="laptops_image">
-								<img src="{% static 'img/laptop1.png' %}" alt="" style="height: 200px; width: 250px;">
-
-							</div>
-							<div class="Laptops_content" style="text-align: center; width: 260px;">
-								<div class="laptop_title"><a href="#"><h2>Acer Nitro</h2></a></div>
-								<div class="laptop_subtitle"><p>Cool cool cool cool.</p></div>
-								<div class="laptop_price">From $679</div>
-							</div>
-						</div>
-
-                        <!-- laptops -->
-						<div class="laptops_item" style="width: 350px; float: left; margin-left: 20px;">
-							<div class="laptops_image">
-								<img src="{% static 'img/laptop1.png' %}" alt="" style="height: 200px; width: 250px;">
-
-							</div>
-							<div class="Laptops_content" style="text-align: center; width: 260px;">
-								<div class="laptop_title"><a href="#"><h2>Acer Nitro</h2></a></div>
-								<div class="laptop_subtitle"><p>Cool cool cool cool.</p></div>
-								<div class="laptop_price">From $679</div>
-							</div>
-						</div>
-
-                        <!-- laptops -->
-						<div class="laptops_item" style="width: 350px; float: left; margin-left: 20px;">
-							<div class="laptops_image">
-								<img src="{% static 'img/laptop1.png' %}" alt="" style="height: 200px; width: 250px;">
-
-							</div>
-							<div class="Laptops_content" style="text-align: center; width: 260px;">
-								<div class="laptop_title"><a href="#"><h2>Acer Nitro</h2></a></div>
-								<div class="laptop_subtitle"><p>Cool cool cool cool.</p></div>
-								<div class="laptop_price">From $679</div>
-							</div>
-						</div>
-
-                        <!-- laptops -->
-						<div class="laptops_item" style="width: 35s0px; float: left; margin-left: 20px;">
-							<div class="laptops_image">
-								<img src="{% static 'img/laptop1.png' %}" alt="" style="height: 200px; width: 250px;">
-
-							</div>
-							<div class="Laptops_content" style="text-align: center; width: 260px;">
-								<div class="laptop_title"><a href="#"><h2>Acer Nitro</h2></a></div>
-								<div class="laptop_subtitle"><p>Cool cool cool cool.</p></div>
-								<div class="laptop_price">From $679</div>
-							</div>
-						</div>
-                    </div>
-
-
+                    <div class="overlay">
+                        <div class="valign-middle-cell">
+                            <div class="valign-middle-content">
+                                <a href="#"><h3 class="h3 light">Laptops</h3></a>
+                                <img src={% static "img/1.png" %} alt="Cato">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="col-sm-4">
+                <div class="banner-shortcode style-3 wide">
+                    <div class="overlay">
+                        <div class="valign-middle-cell">
+                            <div class="valign-middle-content">
+                                <a href=""><h3 class="h3 light">Gaming Laptos</h3></a>
+                                <img src={% static "img/2.jpg" %} alt="Cato">
 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="banner-shortcode style-3 wide" style="background-image: url(img/banner.jpg);">
+                    <div class="overlay">
 
+                        <div class="valign-middle-cell">
+                            <div class="valign-middle-content">
+                                <a href=""><h3 class="h3 light">Accessories</h3></a>
+                                <img src={% static "img/3.jpeg" %} alt="Cato">
 
-
-
-
-
-
-
-
-
-
-
-			</div>
-		</div>
-	</div>
-
-  <!-- subscribers -->
-  <div id="subscribe" class="section">
-    <!-- container -->
-    <div class="container">
-      <!-- row -->
-      <div class="row">
-        <div class="col-md-12">
-          <div class="subscribe">
-            <p> <strong>SUBSCRIBE</strong></p>
-            <form>
-              <input class="input" type="email" placeholder="Enter Your Email">
-
-              <button class="subscribe-btn"><i class="fa fa-envelope"></i> Subscribe</button>
-            </form>
-            <ul class="subscribe-follow">
-              <li>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-              </li>
-            </ul>
-          </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- /row -->
     </div>
-    <!-- /container -->
-  </div>
+    <div class="laptop" id="laptop">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
 
-  <!-- Footer -->
+                    <div class="section_title"><h2>Laptops</h2></div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4" style="">
+                <div class="thumbnail">
+                    <img src={% static "img/laptop1.png" %} alt="laptop">
+                    <div class="caption">
+                        <h4 class="pull-right">$24.99</h4>
+                        <h4><a href="#">1<sup>st</sup> Product</a>
+                        </h4>
+                        <p>This is a short description. Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit.</p>
+                        <div class="ratings">
+                            <p class="pull-right"><a href="p#">15 reviews</a></p>
+                            <p>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-  </div>
-      <div class="login">
-  <div id="id02" class="modal">
 
-    <form class="modal-content animate" action=" " method="post">
-        {% csrf_token %}
-      <div class="imgcontainer">
-        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <!-- <img src="img/logo - Shortcut.lnk" alt="logo" class="avatar">
-      </div> -->
-      <h1>LogIn</h1>
+            </div>
+            <div class="col-sm-6 col-md-4" style="">
+                <div class="thumbnail">
+                    <img src={% static "img/laptop2.png" %} alt="laptop">
+                    <div class="caption">
+                        <h4 class="pull-right">$24.99</h4>
+                        <h4><a href="#">1<sup>st</sup> Product</a>
+                        </h4>
+                        <p>This is a short description. Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit.</p>
+                        <div class="ratings">
+                            <p class="pull-right"><a href="#">15 reviews</a></p>
+                            <p>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-      <div class="container">
-        <label for="name"><b>Username</b></label>
-        {{ form.name }}
 
-          <label for="email"><b>Email</b></label>
-          {{ form.email }}
+            </div>
+            <div class="col-sm-6 col-md-4" style="">
+                <div class="thumbnail">
+                    <img src={% static "img/laptop3.png" %} alt="laptop">
+                    <div class="caption">
+                        <h4 class="pull-right">$24.99</h4>
+                        <h4><a href="#">1<sup>st</sup> Product</a>
+                        </h4>
+                        <p>This is a short description. Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit.</p>
+                        <div class="ratings">
+                            <p class="pull-right"><a href="#">15 reviews</a></p>
+                            <p>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-        <label for="psw"><b>Password</b></label>
-        {{ form.password }}
 
-        <button type="submit">Login</button>
-        <label>
-          <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
-      </div>
+            </div>
+            <div class="col-sm-6 col-md-4" style="">
+                <div class="thumbnail">
+                    <img src={% static "img/laptop1.png" %} alt="laptop">
+                    <div class="caption">
+                        <h4 class="pull-right">$24.99</h4>
+                        <h4><a href="#">1<sup>st</sup> Product</a>
+                        </h4>
+                        <p>This is a short description. Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit.</p>
+                        <div class="ratings">
+                            <p class="pull-right"><a href="#">15 reviews</a></p>
+                            <p>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div><
 
-      <div class="container" style="background-color:#f1f1f1">
-        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
-        <span class="psw">Forgot <a href="#">password?</a></span>
-      </div>
-      </div>
-    </form>
-  </div>
-  </div>
-  </div>
+
+            </div>
+            <div class="col-sm-6 col-md-4" style="">
+                <div class="thumbnail">
+
+                    <img src={% static "img/laptop2.png" %} alt="laptop">
+                    <div class="caption">
+                        <h4 class="pull-right">$24.99</h4>
+                        <h4><a href="#">1<sup>st</sup> Product</a>
+                        </h4>
+                        <p>This is a short description. Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit.</p>
+                        <div class="ratings">
+                            <p class="pull-right"><a href="#">15 reviews</a></p>
+                            <p>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-sm-6 col-md-4" style="">
+                <div class="thumbnail">
+                    <img src={% static "img/laptop1.png" %} alt="laptop">
+                    <div class="caption">
+                        <h4 class="pull-right">$24.99</h4>
+                        <h4><a href="#">1<sup>st</sup> Product</a>
+                        </h4>
+                        <p>This is a short description. Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit.</p>
+                        <div class="ratings">
+                            <p class="pull-right"><a href="#">15 reviews</a></p>
+                            <p>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+    </div>
+    </div>
+
+    <!-- subscribers -->
+    <div id="subscribe" class="section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="subscribe">
+                        <p><strong>SUBSCRIBE</strong></p>
+                        <form>
+                            <input class="input" type="email" placeholder="Enter Your Email">
+
+                            <button class="subscribe-btn"><i class="fa fa-envelope"></i> Subscribe</button>
+                        </form>
+                        <ul class="subscribe-follow">
+                            <li>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
+
+    <!-- Footer -->
+    <style>
+        .thumbnail img {
+            height: 200px;
+        }
+
+        .valign-middle-content {
+            text-align: center;
+        }
+
+        .overlay {
+            background: whitesmoke;
+        }
+
+        .overlay img {
+            width: 335px;
+            height: 160px;
+        }
+    </style>
+    </div>
+
 {% endblock %}
