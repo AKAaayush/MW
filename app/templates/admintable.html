@@ -1,0 +1,165 @@
+{#<div class="table">#}
+{#    <table>#}
+{#    <tr>#}
+{#        <th>ID</th>#}
+{#        <th>Name</th>#}
+{#        <th>Email</th>#}
+{#        <th>Password</th>{% load static %}#}
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{##}
+{#<head>#}
+{#  <meta charset="UTF-8">#}
+{#  <meta name="viewport" content="width=device-width, initial-scale=1.0">#}
+{#  <meta http-equiv="X-UA-Compatible" content="ie=edge">#}
+{#  <meta name="viewport" content="width = device-width, initial-scale = 1">#}
+{#  <title>BetterBuy</title>#}
+{#  <link rel="stylesheet" href='{% static "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" %}'>#}
+{##}
+{#  <link href='{% static "https://fonts.googleapis.com/css?family=Questrial|Raleway:700,900" %}' rel="stylesheet">#}
+{##}
+{#  <!-- Google font -->#}
+{#  <link href='{% static "https://fonts.googleapis.com/css?family=Montserrat:400,500,700" %}' rel="stylesheet">#}
+{##}
+{#  <!-- Bootstrap -->#}
+{#  <link type="text/css" rel="stylesheet" href='{% static "css/bootstrap.min.css" %}' />#}
+{##}
+{#  <!-- Slick -->#}
+{#  <link type="text/css" rel="stylesheet" href='{% static "css/slick.css" %}'/>#}
+{#  <link type="text/css" rel="stylesheet" href='{% static "css/slick-theme.css" %}' />#}
+{##}
+{#  <!-- nouislider -->#}
+{#  <link type="text/css" rel="stylesheet" href='{% static "css/nouislider.min.css" %}'/>#}
+{##}
+{#  <!-- Font Awesome Icon -->#}
+{#  <link rel="stylesheet" href='{% static "css/font-awesome.min.css" %}'>#}
+{##}
+{#  <!-- Custom stlylesheet -->#}
+{#  <link type="text/css" rel="stylesheet" href='{% static "css/style.css" %}' />#}
+{#  <link rel="stylesheet" href={% static "css/admin.css" %}>#}
+{#  <link type="text/css"rel="stylesheet" href='{% static "css/login.css" %}'>#}
+{#<!-- javascripts -->#}
+{#<script src='{% static "js/login.js" %}'></script>#}
+{#<!-- taplogo -->#}
+{#  <link rel="shortcut icon" href='{% static "img/logo.png" %}' />#}
+{#</head>#}
+{##}
+{#<body>#}
+{#<div class="header">#}
+{#    <a class="pull-left" href="#"><img src='{% static "img/logo.png" %}' alt="logo"></a>#}
+{#<a href="#" class="nav-trigger"><span></span>#}
+{#</a>#}
+{##}
+{#    {%  csrf_token %}#}
+{##}
+{#</div>#}
+{#<div class="side-nav">#}
+{#    <nav>#}
+{#        <ul>#}
+{#            <li>#}
+{#                <a href="#">#}
+{#                    <span><i class="fa fa-user"></i></span>#}
+{#                    <span>User-Details</span>#}
+{#                </a>#}
+{#            </li>#}
+{#            <li>#}
+{#                <a href="#">#}
+{#                    <span><i class="fa fa-user"></i></span>#}
+{#                    <span>Sign-Up</span>#}
+{#                </a>#}
+{#            </li>#}
+{#            <li class="active">#}
+{#                <a href="#">#}
+{#                    <span><i class="fa fa-user"></i></span>#}
+{#                    <span>laptops</span>#}
+{#                </a>#}
+{#            </li>#}
+{#            <li>#}
+{#                <a href="#">#}
+{#                    <span><i class="fa fa-user"></i></span>#}
+{#                    <span>Brands</span>#}
+{#                </a>#}
+{#            </li>#}
+{#        </ul>#}
+{#    </nav>#}
+{#</div>#}
+{##}
+{#<div class="main-content">#}
+{#<div class="table">#}
+{#    <table>#}
+{#    <tr>#}
+{#        <th>ID</th>#}
+{#        <th>Name</th>#}
+{#        <th>Email</th>#}
+{#        <th>Password</th>#}
+{#        <th>Action</th>#}
+{#    </tr>#}
+{#    {% for user in users %}#}
+{#    <tr>#}
+{##}
+{#    <td>{{ user.user_id }}</td>#}
+{#    <td>{{ user.name }}</td>#}
+{#    <td>{{ user.email }}</td>#}
+{#    <td>{{ user.password }}</td>#}
+{#      <td><a href="/edit/{{ user.user_id }}">edit</a>/<a href="/delete/{{ user.user_id }}">delete</a></td>#}
+{##}
+{#    </tr>#}
+{#    {% endfor %}#}
+{#</table>#}
+{#</div>#}
+{##}
+{##}
+{#</div>#}
+{##}
+{##}
+{#  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>#}
+{#  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>#}
+{#</body>#}
+{##}
+{#</html>#}
+{#        <th>Action</th>#}
+{#    </tr>#}
+{#    {% for adminuser in adminusers %}#}
+{#    <tr>#}
+{##}
+{#    <td>{{ adminuser.id }}</td>#}
+{#    <td>{{ adminuser.adminname }}</td>#}
+{#    <td>{{ adminuser.adminemail }}</td>#}
+{#    <td>{{ adminuser.adminpassword }}</td>#}
+{#      <td><a href="/edit/{{ user.user_id }}">edit</a>/<a href="/delete/{{ user.user_id }}">delete</a></td>#}
+{##}
+{#    </tr>#}
+{#    {% endfor %}#}
+{#</table>#}
+{#</div>#}
+{%  extends 'dashbord.html' %}
+{% block content %}
+    {% load static %}
+<div class="main-content">
+
+<div class="table">
+    <table class="table table-bordered table-dark">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Action</th>
+    </tr>
+      {% for adminuser in adminusers %}
+    <tr>
+
+    <td>{{ adminuser.id }}</td>
+    <td>{{ adminuser.adminname }}</td>
+    <td>{{ adminuser.adminemail }}</td>
+    <td>{{ adminuser.adminpassword }}</td>
+      <td><a href="/edit1/{{ adminuser.id }}">edit</a>/<a href="/admindelete/{{ adminuser.id }}">delete</a></td>
+
+    </tr>
+    {% endfor %}
+</table>
+</div>
+
+
+</div>
+{% endblock %}

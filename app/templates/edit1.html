@@ -1,0 +1,10 @@
+<form method="post" action="/update1/{{user.id}}">
+{% csrf_token %}
+
+<p><label for="name"><b>Name: </b></label><input type="text" value="{{user.adminname}}" name="adminname" /></p>
+<p><label for="email"><b>Email: </b></label><input type="email" value="{{user.adminemail}}" name="adminemail" /></p>
+<p><label for="psw"><b>Password: </b></label><input type="password" value="{{user.adminpassword}}" name="adminpassword" /></p>
+
+
+<button type="submit">submit</button>
+</form>

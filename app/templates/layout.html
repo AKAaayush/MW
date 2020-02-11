@@ -68,7 +68,8 @@
             <i class="fa fa-sign-in" aria-hidden="true"></i>
             <a href="/login"><b>login</b></a>
             &nbsp; or &nbsp;
-            <a href="/create"><b>register</b></a>
+{#            <a href="/create"><b>register</b></a>#}
+              {{ request.session.name }}
           </div>
           <div class="head-content4">
             <i class="fa fa-heart-o"></i>
@@ -130,8 +131,10 @@
         </div>
           <!-- navbar-left will move the search to the left -->
           <form class="navbar-form navbar-right" role="search">
+
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
+              <input type="text" class="form-control" placeholder="Search" {{ sform.subemail }}>
+{#                {{ sform.subemail }}#}
             </div>
             <button type="submit" class="btn btn-default">Submit</button>
           </form>

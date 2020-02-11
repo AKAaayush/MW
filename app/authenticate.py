@@ -1,14 +1,21 @@
+from django.contrib import messages
 from django.shortcuts import redirect
 from app.models import User
+from django.db.models import Q
+
 
 class Authenticate:
-    def valid_user(function):
-        def wrap(request):
 
+    def valid_login(function):
+        def login(request):
             try:
-                User.objects.get(name=request.session['name'])
-                return function(request)
-            except:
-                return redirect("/entry")
 
-            return wrap
+                User.objects.get(Q(password=request.session['password']) & Q(email=request.session['email']))
+
+                return function(request)
+
+            except:
+                messages.warning(request, "Please Enter valid email or password.")
+            return redirect("/login")
+
+        return login
