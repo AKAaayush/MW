@@ -10,7 +10,7 @@ from django.contrib.auth.models import auth
 # Create your views here.
 def index(request):
     form = UserForm()
-    return render(request, 'entry.html', {'form': form})
+    return render(request, 'index.html', {'form': form})
 
 
 def laptos(request):

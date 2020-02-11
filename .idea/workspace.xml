@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfab8ed2-2fed-47c5-9930-02587cc4328d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/migrations/0002_subcriber.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/migrations/0003_admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/admintable.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/create1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/edit1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/userdetail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BetterBuy/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/BetterBuy/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/authenticate.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/authenticate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/dashbord.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/dashbord.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/entry.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/entry.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/singup.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/singup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -137,7 +122,7 @@
       <workItem from="1581329333193" duration="198000" />
       <workItem from="1581341667772" duration="21975000" />
       <workItem from="1581388729569" duration="5521000" />
-      <workItem from="1581400261421" duration="3744000" />
+      <workItem from="1581400261421" duration="4340000" />
     </task>
     <servers />
   </component>
