@@ -24,18 +24,16 @@ def about(request):
 def apple(request):
     return render(request, 'apple.html')
 
+def adminlogin(request):
+    return render(request, 'adminlogin.html')
 
-# def dashbord(request):
-#     return render(request,'dashbord.html')
 
-# database retrive
-
-@Authenticate.valid_login
+@Authenticate.valid_adminlogin
 def userdetail(request):
     users = User.objects.all()
-    return render(request, "entry.html", {'users': users})
+    return render(request, "userdetail.html", {'users': users})
 
-
+@Authenticate.valid_adminlogin
 def admintable(request):
     adminuser = Admin.objects.all()
     return render(request, "admintable.html", {'adminusers': adminuser})
@@ -54,11 +52,10 @@ def login(request):
     return render(request, 'login.html')
 
 
-def entry(request):
-    request.session['name'] = request.POST['name']
+def adminentry(request):
+    request.session['email'] = request.POST['email']
     request.session['password'] = request.POST['password']
-    redirect('/entry')
-    return render(request, 'entry.html')
+    return redirect('/userdetail')
 
 
 def loginvalid(request):

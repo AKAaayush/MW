@@ -30,7 +30,7 @@ urlpatterns = [
     path('create', views.create, name="create"),
     path('loginvalid', views.loginvalid, name="loginvalid"),
     path('login', views.login, name="login"),
-    path('entry', views.entry, name="entry"),
+    path('adminentry', views.adminentry, name="adminentry"),
     # path('entry',views.entry),
 
     path('edit/<int:id>', views.edit, name="edit"),
@@ -42,5 +42,5 @@ urlpatterns = [
     path('create1', views.create1),
     path('edit1/<int:adminid>', views.edit1),
     path('update1/<int:adminid>', views.update1),
-
+    path('admin',views.adminlogin),
 ]

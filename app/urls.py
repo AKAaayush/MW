@@ -22,12 +22,13 @@ urlpatterns = [
     path('update/<int:id>',views.update, name="update"),
     path('delete/<int:id>',views.delete, name="delete"),
 
-#     admin
+#  admintabel controle panel
     path('admindelete/<int:adminid>', views.admindelete),
     path('create1',views.create1),
     path('edit1/<int:adminid>',views.edit1),
     path('update1/<int:adminid>',views.update1),
 
+# adminlogin
 
 
 

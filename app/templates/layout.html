@@ -99,14 +99,14 @@
           </button>
 
           <!-- You'll have to add padding in your image on the top and right of a few pixels (CSS Styling will break the navbar) -->
-          <a class="pull-left" href="#"><img src='{% static "img/logo.png" %}' alt="logo"></a>
+          <a class="pull-left" class="view overlay zoom" href="/"><img src='{% static "img/logo.png" %}' alt="logo"></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
          <div class="mainnav">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="/">Home <span class="sr-only">(current)</span></a></li>
+            <li><a href="/">Home <span class="sr-only">(current)</span></a></li>
             <li><a href='/laptos'>Laptos</a></li>
             <li><a href='/about'>About US</a></li>
 
@@ -122,6 +122,23 @@
                 <li><a href="#">Dell</a></li>
                 <li role="separator" class="divider"></li>
                 <li><a href="#">Lenevo</a></li>
+                  <li><a href="/login">Lenevo</a></li>
+                  <li><a href="create">Lenevo</a></li>
+
+
+              </ul>
+            </li>
+
+              <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">Login/Signup <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Sign-up</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href='/create'>Login</a></li>
+                  <li role="separator" class="divider"></li>
+
+
 
 
               </ul>
@@ -312,9 +329,18 @@
   </div>
 
 
-
-
-
+  <style>
+      a:hover, a:active {
+    color: #FF3603;
+    text-decoration: none;
+    outline: 0;
+}
+      .mainnav ul li   a:hover, a:active {
+    color: #FF3603;
+    text-decoration: none;
+    outline: 0;
+}
+  </style>
 
 
 
