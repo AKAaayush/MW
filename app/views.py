@@ -70,15 +70,6 @@ def loginvalid(request):
     request.session['password'] = request.POST['password']
     return redirect('/userentry')
 
-
-# def subscriber(request):
-#     if request.method=="POST":
-#         subform=SubscriberForm(request.POST)
-#         subform.save()
-#         redirect('/')
-#         subform = SubscriberForm()
-#     return render(request, 'index.html', {'subform': subform})
-
 def edit(request, id):
     user = User.objects.get(user_id=id)
     return render(request, 'edit.html', {'user': user})
